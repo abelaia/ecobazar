@@ -1,6 +1,8 @@
 <script setup>
 import { languages } from '@/constants/languages.js';
 import { currencies } from '@/constants/currencies.js';
+import AppSearch from '@/components/AppSearch/AppSearch.vue';
+import AppBasket from '@/components/AppBasket/AppBasket.vue';
 
 const selectedLanguage = ref('ENG');
 const selectedCurrency = ref('USD');
@@ -68,6 +70,28 @@ const selectedCurrency = ref('USD');
                             Sign Up
                         </a>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__middle-bar-section">
+            <div class="header__middle-bar">
+                <a href="/" class="header__logo">
+                <img
+                    src="@/assets/images/ecobazar-logo.svg"
+                    alt="EcoBazar"
+                    class="header__logo-image"
+                >
+                </a>
+                <AppSearch class="header__search" />
+                <div class="header__actions">
+                    <a href="/favourites" class="header__actions-favourites">
+                        <img
+                            src="@/assets/images/favourites.svg"
+                            alt="favourites"
+                            class="header__actions-favourites-icon"
+                        >
+                    </a>
+                    <AppBasket class="header__actions-basket" />
                 </div>
             </div>
         </div>

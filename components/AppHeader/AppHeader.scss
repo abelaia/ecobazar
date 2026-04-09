@@ -103,4 +103,55 @@
     &__auth-separator {
         margin: 0 4px;
     }
+
+    &__middle-bar-section {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    &__middle-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1320px;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
+    &__logo {
+        text-decoration: none;
+    }
+
+    &__logo-image {
+        display: block;
+        height: 40px;
+        width: auto;
+    }
+
+    &__search {
+        flex: 1;
+        max-width: 500px;
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    &__actions-favourites {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    &__actions-favourites-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    &__basket {
+        display: flex;
+        align-items: center;
+    }
 }
