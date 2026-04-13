@@ -1,0 +1,129 @@
+@use '@/assets/styles/vars.scss' as *;
+
+.footer {
+    width: 100%;
+    background-color: $color-gray-900;
+    padding: 60px 0 30px;
+
+    &__container {
+        max-width: 1320px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    &__top {
+        display: flex;
+        gap: 80px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid $color-gray-500;
+    }
+
+    &__brand {
+        max-width: 340px;
+    }
+
+    &__logo {
+        text-decoration: none;
+        margin-bottom: 20px;
+    }
+
+    &__description {
+        margin-top: 16px;
+        font-family: $font-primary;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-regular;
+        color: $color-gray-500;
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 16px;
+    }
+
+    &__phone {
+        font-family: $font-primary;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-medium;
+        color: $color-white;
+        text-decoration: none;
+        border-bottom: 1px solid $color-green-sucsess;
+        padding-bottom: 6px;
+    }
+
+    &__contacts-separator {
+        font-family: $font-primary;
+        font-size: $font-size-m;
+        font-weight: $font-weight-regular;
+        color: $color-gray-500;
+    }
+
+    &__email {
+        font-family: $font-primary;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-medium;
+        color: $color-white;
+        text-decoration: none;
+        border-bottom: 1px solid $color-green-sucsess;
+        padding-bottom: 6px;
+    }
+
+    &__columns {
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    &__column {
+        flex: 0 0 auto;
+    }
+
+    &__column-title {
+        margin-bottom: 20px;
+        font-family: $font-primary;
+        font-size: $font-size-m;
+        font-weight: $font-weight-medium;
+        color: $color-white;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__nav-link {
+        font-family: $font-primary;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-regular;
+        color: $color-gray-400;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $color-white;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+    }
+
+    &__pay {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__copyright {
+        font-family: $font-primary;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-regular;
+        color: $color-gray-500;
+    }
+}
