@@ -1,0 +1,81 @@
+@use '@/assets/styles/vars.scss' as *;
+
+.navigation {
+    width: 100%;
+    background-color: $color-gray-800;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1320px;
+        margin: 0 auto;
+        padding: 16px 0;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    &__select {
+        font-family: $font-primary;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-medium;
+        color: $color-gray-400;
+        background-color: transparent;
+        background-size: 7px 4px;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        
+        option {
+            font-size: $font-size-sm;
+            color: $color-gray-600;
+            background-color: $color-gray-400;
+        }
+
+        &:hover {
+            color: $color-white;
+        }
+    }
+
+    &__link {
+        font-family: $font-primary;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-medium;
+        color: $color-gray-400;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        
+        &:hover {
+            color: $color-white;
+        }
+    }
+
+    &__phone {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__phone-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    &__phone-number {
+        font-family: $font-primary;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-medium;
+        color: $color-white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $color-gray-400;
+        }
+    }
+}
