@@ -3,7 +3,10 @@
 $font-primary: 'Poppins', sans-serif;
 $font-size-xs: 12px;
 $font-size-sm: 14px;
-$font-size-base: 16px;
+$font-size-m: 16px;
+$font-size-xl: 20px;
+$font-size-heading: 32px;
+$font-size-heading-big: 48px;
 
 $font-weight-regular: 400;
 $font-weight-medium: 500;
@@ -14,5 +17,14 @@ $color-white: #FFFFFF;
 $color-black: #000000;
 $color-gray-100: #E6E6E6;
 $color-gray-200: #CCCCCC;
+$color-gray-400: #999999;
 $color-gray-500: #808080;
 $color-gray-600: #666666;
+$color-gray-800: #333333;
+$color-gray-900: #1A1A1A;
+
+$color-green-sucsess: #00B207;
+$color-green-dark: #2C742F;
+$color-green-bright: #84D187;
+
+$color-orange: #FF8A00;

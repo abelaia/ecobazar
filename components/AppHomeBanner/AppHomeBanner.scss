@@ -1,0 +1,173 @@
+@use '@/assets/styles/vars.scss' as *;
+
+.home-banner {
+    width: 100%;
+    padding: 24px 0;
+
+    &__container {
+        display: flex;
+        gap: 24px;
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+
+    &__card {
+        position: relative;
+        flex: 2;
+        height: 600px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    &__right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        height: 600px;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__content {
+        position: absolute;
+        z-index: 2;
+    }
+    
+    &__content-organic {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 30%;
+        left: 40px;
+    }
+
+    &__title-organic {
+        max-width: 400px;
+        font-family: $font-primary;
+        font-size: $font-size-heading-big;
+        font-weight: $font-weight-semibold;
+        color: $color-white;
+    }
+
+    &__offer-wrapper {
+        margin-top: 28px;
+        padding-left: 12px;
+        border-left: 2px solid $color-green-bright;
+    }
+
+    &__offer {
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+    }
+
+    &__offer-label {
+        font-family: $font-primary;
+        font-size: $font-size-xl;
+        font-weight: $font-weight-medium;
+        color: $color-white;
+    }
+
+    &__offer-value {
+        padding: 4px 12px;
+        font-family: $font-primary;
+        font-size: $font-size-xl;
+        font-weight: $font-weight-semibold;
+        color: $color-white;
+        background-color: $color-orange;
+        border-radius: 5px;
+    }
+
+    &__shipping-text {
+        margin-top: 8px;
+        font-family: $font-primary;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-regular;
+        color: $color-white;
+    }
+
+    &__button-organic {
+        margin-top: 28px;
+        align-self: flex-start;
+
+        &:hover {
+            color: $color-white;
+            background-color: $color-green-sucsess;
+        }
+    }
+
+    &__content-summer {
+        top: 20%;
+        left: 32px;
+    }
+
+    &__label-summer {
+        display: inline-block;
+        font-family: $font-primary;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-medium;
+        color: $color-gray-900;
+        letter-spacing: 2px;
+    }
+
+    &__discount-summer {
+        margin-top: 8px;
+        font-family: $font-primary;
+        font-size: $font-size-heading;
+        font-weight: $font-weight-semibold;
+        color: $color-gray-900;
+    }
+
+    &__text-summer {
+        margin-top: 12px;
+        font-family: $font-primary;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-regular;
+        color: $color-gray-600;
+    }
+
+    &__button-summer {
+        margin-top: 24px;
+        
+        &:hover {
+            color: $color-green-dark;
+            background-color: transparent;
+        }
+    }
+
+    &__content-deal {
+        top: 25%;
+        left: 32px;
+        text-align: center;
+    }
+
+    &__label-deal {
+        font-family: $font-primary;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-medium;
+        color: $color-white;
+        letter-spacing: 2px;
+    }
+
+    &__text-deal {
+        max-width: 340px;
+        margin-top: 12px;
+        font-family: $font-primary;
+        font-size: $font-size-heading;
+        font-weight: $font-weight-semibold;
+        color: $color-white;
+    }
+
+    &__button-deal {
+        margin-top: 24px;
+        
+        &:hover {
+            color: $color-white;
+            background-color: transparent;
+        }
+    }
+}
