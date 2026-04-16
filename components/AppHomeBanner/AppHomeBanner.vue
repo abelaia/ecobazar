@@ -1,6 +1,5 @@
 <script setup>
 import AppButton from '../UI/AppButton.vue';
-
 </script>
 
 <template>

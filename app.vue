@@ -4,5 +4,6 @@
 <template>
     <div>
         <AppHomeBanner />
+        <AppAdvantages />
     </div>
 </template>
