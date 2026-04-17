@@ -1,11 +1,18 @@
 <script setup>
 import AppButton from '../AppButton.vue';
+
+defineProps({
+    title: {
+        type: String,
+        required: true,
+    },
+});
 </script>
 
 <template>
     <div class="section-header">
         <h2 class="section-header__title">
-            Popular Categories
+            {{ title }}
         </h2>
         <AppButton 
             class="section-header__button"
