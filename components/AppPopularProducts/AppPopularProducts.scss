@@ -1,0 +1,21 @@
+@use '@/assets/styles/vars.scss' as *;
+
+.popular-products {
+    width: 100%;
+    padding: 50px 0px;
+    background-color: $color-white;
+
+    &__container {
+        max-width: 1320px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(5, 256px);
+        gap: 8px;
+        justify-content: space-between;
+        margin-top: 32px;
+    }
+}

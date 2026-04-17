@@ -1,6 +1,7 @@
 <template>
     <div>
         <AppHeader />
-        <AppCategories />
+        <AppPopularCategories />
+        <AppPopularProducts />
     </div>
 </template>

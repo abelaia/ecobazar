@@ -1,7 +1,7 @@
 <script setup>
 import AppSectionHeader from '../UI/AppSectionHeader/AppSectionHeader.vue';
-import CategoryCard from '@/components/AppCategoryCard/AppCategoryCard.vue';
-import { categories } from '@/constants/categories.js';
+import AppCategoryCard from '@/components/AppCategoryCard/AppCategoryCard.vue';
+import { categories } from '~/constants/popularCategories.js';
 </script>
 
 <template>
@@ -11,7 +11,7 @@ import { categories } from '@/constants/categories.js';
                 title="Popular Categories"
             />
             <div class="home-categories__grid">
-                <CategoryCard
+                <AppCategoryCard
                     v-for="category in categories"
                     :key="category.id"
                     :icon="category.icon"
@@ -23,5 +23,5 @@ import { categories } from '@/constants/categories.js';
 </template>
 
 <style lang="scss" scoped>
-@use './AppCategories.scss' as *;
+@use './AppPopularCategories.scss' as *;
 </style>
