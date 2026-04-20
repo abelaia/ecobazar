@@ -43,31 +43,11 @@
         margin-top: 16px;
     }
 
-    &__phone {
-        font-family: $font-primary;
-        font-size: $font-size-sm;
-        font-weight: $font-weight-medium;
-        color: $color-white;
-        text-decoration: none;
-        border-bottom: 1px solid $color-green-sucsess;
-        padding-bottom: 6px;
-    }
-
     &__contacts-separator {
         font-family: $font-primary;
         font-size: $font-size-m;
         font-weight: $font-weight-regular;
         color: $color-gray-500;
-    }
-
-    &__email {
-        font-family: $font-primary;
-        font-size: $font-size-sm;
-        font-weight: $font-weight-medium;
-        color: $color-white;
-        text-decoration: none;
-        border-bottom: 1px solid $color-green-sucsess;
-        padding-bottom: 6px;
     }
 
     &__columns {

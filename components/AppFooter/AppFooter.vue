@@ -1,5 +1,7 @@
 <script setup>
-import { myAccountItems, helpsItems, proxyItems, categoriesItems} from '@/constants/menu.js';
+import { footerColumns } from '@/models/footerColumns.js';
+import { payIcons } from '@/models/payIcons.js'
+import AppLink from '@/components/UI/AppLink/AppLink.vue';
 </script>
 
 <template>
@@ -22,76 +24,31 @@ import { myAccountItems, helpsItems, proxyItems, categoriesItems} from '@/consta
                         Duis gravida turpis dui, eget bibendum magna congue nec.
                     </p>
                     <div class="footer__contacts">
-                        <a 
+                        <AppLink 
                             href="tel:+72195550114"
-                            class="footer__phone"
-                        >
-                            (219) 555-0114
-                        </a>
+                            text="(219) 555-0114"
+                        />
                         <span class="footer__contacts-separator">
                             or
                         </span>
-                        <a 
+                        <AppLink 
                             href="mailto:Proxy@gmail.com"
-                            class="footer__email"
-                        >
-                            Proxy@gmail.com
-                        </a>
+                            text="Proxy@gmail.com"
+                        />
                     </div>
                 </div>
                 <div class="footer__columns">
-                    <div class="footer__column">
+                    <div
+                        v-for="column in footerColumns"
+                        :key="column.id"
+                        class="footer__column"
+                    >
                         <h4 class="footer__column-title">
-                            My Account
+                            {{ column.title }}
                         </h4>
                         <nav class="footer__nav">
                             <a
-                                v-for="item in myAccountItems"
-                                :key="item.label"
-                                :href="item.link"
-                                class="footer__nav-link"
-                            >
-                                {{ item.label }}
-                            </a>
-                        </nav>
-                    </div>
-                    <div class="footer__column">
-                        <h4 class="footer__column-title">
-                            Helps
-                        </h4>
-                        <nav class="footer__nav">
-                            <a
-                                v-for="item in helpsItems"
-                                :key="item.label"
-                                :href="item.link"
-                                class="footer__nav-link"
-                            >
-                                {{ item.label }}
-                            </a>
-                        </nav>
-                    </div>
-                    <div class="footer__column">
-                        <h4 class="footer__column-title">
-                            Proxy
-                        </h4>
-                        <nav class="footer__nav">
-                            <a
-                                v-for="item in proxyItems"
-                                :key="item.label"
-                                :href="item.link"
-                                class="footer__nav-link"
-                            >
-                                {{ item.label }}
-                            </a>
-                        </nav>
-                    </div>
-                    <div class="footer__column">
-                        <h4 class="footer__column-title">
-                            Categories
-                        </h4>
-                        <nav class="footer__nav">
-                            <a
-                                v-for="item in categoriesItems"
+                                v-for="item in column.items"
                                 :key="item.label"
                                 :href="item.link"
                                 class="footer__nav-link"
@@ -104,34 +61,16 @@ import { myAccountItems, helpsItems, proxyItems, categoriesItems} from '@/consta
             </div>
             <div class="footer__bottom">
                 <span class="footer__copyright">
-                    Ecobazar ©Commerce © 2021. All Rights Reserved
+                    Ecobazar eCommerce © {{ new Date().getFullYear() }}. All Rights Reserved
                 </span>
                 <div class="footer__pay">
-                    <img 
-                        src="@/assets/images/applePay.svg"
-                        alt="visa"
-                        class="footer__icon-applePay"
-                    >
-                    <img 
-                        src="@/assets/images/visa.svg"
-                        alt="mastercard"
-                        class="footer__icon-visa"
-                    >
-                    <img 
-                        src="@/assets/images/discover.svg"
-                        alt="visa"
-                        class="footer__icon-discover"
-                    >
-                    <img 
-                        src="@/assets/images/mastercard.svg"
-                        alt="mastercard"
-                        class="footer__icon-mastercard"
-                    >
-                    <img 
-                        src="@/assets/images/cart.svg"
-                        alt="mastercard"
-                        class="footer__icon-cart"
-                    >
+                    <img
+                        v-for="icon in payIcons"
+                        :key="icon.id"
+                        :src="`/images/pay/${icon.src}`"
+                        :alt="icon.alt"
+                        class="footer__pay-icon"
+                    />
                 </div>
             </div>
         </div>
