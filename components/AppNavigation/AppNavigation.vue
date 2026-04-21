@@ -1,67 +1,37 @@
 <script setup>
-import { homeList, shopList, pagesList, blogList } from '@/constants/navigation.js';
+import { menuItems } from '@/constants/navigation.js';
 </script>
 
 <template>
     <div class="navigation">
         <div class="navigation__container">
             <nav class="navigation__menu">
-                <div class="navigation__select-wrapper">
-                    <select class="navigation__select">
-                        <option
-                            v-for="item in homeList"
-                            :key="item.label"
-                            :value="item.link"
-                        >
-                            {{ item.label }}
-                        </option>
-                    </select>
-                </div>
-                <div class="navigation__select-wrapper">
-                    <select class="navigation__select">
-                        <option
-                            v-for="item in shopList"
-                            :key="item.label"
-                            :value="item.link"
-                        >
-                            {{ item.label }}
-                        </option>
-                    </select>
-                </div>
-                <div class="navigation__select-wrapper">
-                    <select class="navigation__select">
-                        <option
-                            v-for="item in pagesList"
-                            :key="item.label"
-                            :value="item.link"
-                        >
-                            {{ item.label }}
-                        </option>
-                    </select>
-                </div>
-                <div class="navigation__select-wrapper">
-                    <select class="navigation__select">
-                        <option
-                            v-for="item in blogList"
-                            :key="item.label"
-                            :value="item.link"
-                        >
-                            {{ item.label }}
-                        </option>
-                    </select>
-                </div>
-                <a 
-                    href="/about"
-                    class="navigation__link"
+                <div 
+                    v-for="item in menuItems"
+                    :key="item.label"
                 >
-                    About Us
-                </a>
-                <a 
-                    href="/contact"
-                    class="navigation__link"
-                >
-                    Contact Us
-                </a>
+                    <div 
+                        v-if="item.children"
+                        class="navigation__select-wrapper"
+                    >
+                        <select class="navigation__select">
+                            <option
+                                v-for="child in item.children"
+                                :key="child.label"
+                                :value="child.link"
+                            >
+                                {{ child.label }}
+                            </option>
+                        </select>
+                    </div>
+                    <a
+                        v-else
+                        :href="item.link"
+                        class="navigation__link"
+                    >
+                        {{ item.label }}
+                    </a>
+                </div>
             </nav>
             <div class="navigation__phone">
                 <img 
