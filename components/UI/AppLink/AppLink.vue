@@ -30,6 +30,6 @@ defineProps({
     font-weight: $font-weight-medium;
     color: $color-white-100;
     text-decoration: none;
-    border-bottom: 1px solid $color-green-sucsess;
+    border-bottom: 1px solid $color-green-500;
 }
 </style>
