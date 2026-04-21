@@ -1,7 +1,14 @@
 <script setup>
-
-const cartCount = ref(3);
-const cartTotal = ref(57.00);
+defineProps({
+    count: {
+        type: Number,
+        default: 0,
+    },
+    total: {
+        type: Number,
+        default: 0,
+    },
+});
 </script>
 
 <template>
@@ -17,10 +24,10 @@ const cartTotal = ref(57.00);
                     class="basket__icon"
                 >
                 <span
-                    v-if="cartCount > 0"
+                    v-if="count > 0"
                     class="basket__badge"
                 >
-                    {{ cartCount }}
+                    {{ count }}
                 </span>
             </div>
             <div class="basket__info">
@@ -28,7 +35,7 @@ const cartTotal = ref(57.00);
                     Shopping cart:
                 </span>
                 <span class="basket__total">
-                    ${{ cartTotal.toFixed(2) }}
+                    ${{ total.toFixed(2) }}
                 </span>
             </div>
         </button>

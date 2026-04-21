@@ -41,13 +41,13 @@
         font-size: $font-size-sm;
         font-weight: $font-weight-semibold;
         color: $color-white;
-        background-color: $color-green-light;
+        background-color: $color-green-500;
         border: 0;
         cursor: pointer;
         transition: background-color 0.3s ease;
 
         &:hover {
-            background-color: $color-green-dark;
+            background-color: $color-green-600;
         }
     }
 }

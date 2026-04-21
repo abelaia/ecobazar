@@ -91,7 +91,11 @@ const selectedCurrency = ref('USD');
                             class="header__actions-favourites-icon"
                         >
                     </a>
-                    <AppBasket class="header__actions-basket" />
+                    <AppBasket 
+                        class="header__actions-basket"
+                        :count="3"
+                        :total="57.00"
+                    />
                 </div>
             </div>
         </div>

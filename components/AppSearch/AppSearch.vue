@@ -2,10 +2,6 @@
 const searchQuery = ref('');
 
 const emit = defineEmits(['search']);
-
-const handleSubmit = () => {
-  emit('search', searchQuery.value);
-};
 </script>
 
 <template>
@@ -20,12 +16,12 @@ const handleSubmit = () => {
             type="text"
             placeholder="Search"
             class="app-search__input"
-            @keyup.enter="handleSubmit"
+            @keyup.enter="emit('search', searchQuery)"
         >
         <button
             type="button"
             class="app-search__button"
-            @click="handleSubmit"
+            @click="emit('search', searchQuery)"
         >
             Search
         </button>
