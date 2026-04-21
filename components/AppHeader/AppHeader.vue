@@ -76,11 +76,11 @@ const selectedCurrency = ref('USD');
         <div class="header__middle-bar-section">
             <div class="header__middle-bar">
                 <a href="/" class="header__logo">
-                <img
-                    src="@/assets/images/ecobazar-logo.svg"
-                    alt="EcoBazar"
-                    class="header__logo-image"
-                >
+                    <img
+                        src="@/assets/images/ecobazar-logo.svg"
+                        alt="EcoBazar"
+                        class="header__logo-image"
+                    >
                 </a>
                 <AppSearch class="header__search" />
                 <div class="header__actions">
@@ -89,7 +89,7 @@ const selectedCurrency = ref('USD');
                             src="@/assets/images/favourites.svg"
                             alt="favourites"
                             class="header__actions-favourites-icon"
-                        >
+                        />
                     </a>
                     <AppBasket 
                         class="header__actions-basket"

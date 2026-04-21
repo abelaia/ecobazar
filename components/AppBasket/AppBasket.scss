@@ -3,15 +3,10 @@
 .basket {
     display: flex;
     align-items: center;
-
-    &__button {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        background-color: transparent;
-        border: none;
-    }
-
+    gap: 12px;
+    background-color: transparent;
+    border: none;
+    
     &__icon-wrapper {
         position: relative;
         display: flex;
@@ -36,7 +31,7 @@
         font-family: $font-primary;
         font-size: $font-size-xxs;
         font-weight: $font-weight-medium;
-        color: $color-white;
+        color: $color-white-100;
         background-color: $color-green-600;
         border-radius: 50%;
     }
@@ -59,6 +54,6 @@
         font-family: $font-primary;
         font-size: $font-size-sm;
         font-weight: $font-weight-medium;
-        color: $color-black;
+        color: $color-black-900;
     }
 }
