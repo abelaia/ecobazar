@@ -80,7 +80,7 @@ const selectedCurrency = ref('USD');
                         src="@/assets/images/ecobazar-logo.svg"
                         alt="EcoBazar"
                         class="header__logo-image"
-                    >
+                    />
                 </a>
                 <AppSearch class="header__search" />
                 <div class="header__actions">

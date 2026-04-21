@@ -2,7 +2,7 @@
 
 .header {
     width: 100%;
-    background-color: $color-white-100;
+    background-color: $color-gray-40;
 
     &__top-bar-section {
         width: 100%;
@@ -33,7 +33,7 @@
         transition: color 0.3s ease;
 
         &:hover {
-            color: $color-black-900;
+            color: $color-gray-950;
             cursor: pointer;
         }
     }
@@ -69,7 +69,7 @@
         appearance: none;
 
         option {
-            background-color: $color-white-100;
+            background-color: $color-gray-40;
             color: $color-gray-600;
         }
     }
@@ -95,7 +95,7 @@
         transition: color 0.3s ease;
 
         &:hover {
-            color: $color-black-900;
+            color: $color-gray-950;
             cursor: pointer;
         }
     }
