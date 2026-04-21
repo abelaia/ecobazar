@@ -28,7 +28,7 @@ defineProps({
     font-family: $font-primary;
     font-size: $font-size-sm;
     font-weight: $font-weight-medium;
-    color: $color-white;
+    color: $color-white-100;
     text-decoration: none;
     border-bottom: 1px solid $color-green-sucsess;
 }
