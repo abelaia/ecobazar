@@ -1,6 +1,5 @@
 <script setup>
-import { footerColumns } from '@/models/footerColumns.js';
-import { payIcons } from '@/models/payIcons.js'
+import { footerLinks, payIcons } from '~/models/menu.js';
 import AppLink from '@/components/UI/AppLink/AppLink.vue';
 </script>
 
@@ -39,7 +38,7 @@ import AppLink from '@/components/UI/AppLink/AppLink.vue';
                 </div>
                 <div class="footer__columns">
                     <div
-                        v-for="column in footerColumns"
+                        v-for="column in footerLinks"
                         :key="column.id"
                         class="footer__column"
                     >
@@ -48,12 +47,12 @@ import AppLink from '@/components/UI/AppLink/AppLink.vue';
                         </h4>
                         <nav class="footer__nav">
                             <a
-                                v-for="item in column.items"
-                                :key="item.label"
-                                :href="item.link"
+                                v-for="({label, link}) in column.items"
+                                :key="label"
+                                :href="link"
                                 class="footer__nav-link"
                             >
-                                {{ item.label }}
+                                {{ label }}
                             </a>
                         </nav>
                     </div>
@@ -61,7 +60,7 @@ import AppLink from '@/components/UI/AppLink/AppLink.vue';
             </div>
             <div class="footer__bottom">
                 <span class="footer__copyright">
-                    Ecobazar eCommerce © {{ new Date().getFullYear() }}. All Rights Reserved
+                    Ecobazar eCommerce&nbsp;&copy; {{ new Date().getFullYear() }}. All Rights Reserved
                 </span>
                 <div class="footer__pay">
                     <img

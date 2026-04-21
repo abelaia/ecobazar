@@ -25,3 +25,18 @@ export const categoriesItems = [
     { label: 'Bread & Bakery', link: '/bread-bakery' },
     { label: 'Beauty & Health', link: '/beauty-health' },
 ];
+
+export const footerLinks = [
+    { id: 1, title: 'My Account', items: myAccountItems },
+    { id: 2, title: 'Helps', items: helpsItems },
+    { id: 3, title: 'Proxy', items: proxyItems },
+    { id: 4, title: 'Categories', items: categoriesItems },
+];
+
+export const payIcons = [
+    { id: 1, src: 'applePay.svg', alt: 'Apple Pay' },
+    { id: 2, src: 'visa.svg', alt: 'Visa' },
+    { id: 3, src: 'discover.svg', alt: 'Discover' },
+    { id: 4, src: 'mastercard.svg', alt: 'Mastercard' },
+    { id: 5, src: 'cart.svg', alt: 'Cart' },
+];
