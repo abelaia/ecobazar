@@ -77,7 +77,7 @@ const selectedCurrency = ref('USD');
             <div class="header__middle-bar">
                 <a href="/" class="header__logo">
                     <img
-                        src="@/assets/images/ecobazar-logo.svg"
+                        src="@/assets/images/ecobazar-logo-black.svg"
                         alt="EcoBazar"
                         class="header__logo-image"
                     />
