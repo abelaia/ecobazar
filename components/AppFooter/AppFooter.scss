@@ -35,12 +35,23 @@
         color: $color-gray-500;
     }
 
+
     &__contacts {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
         gap: 8px;
         margin-top: 16px;
+    }
+
+    &__link {
+        font-family: $font-primary;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-medium;
+        color: $color-gray-40;
+        text-decoration: none;
+        border-bottom: 1px solid $color-green-500;
+        padding-bottom: 6px;
     }
 
     &__contacts-separator {

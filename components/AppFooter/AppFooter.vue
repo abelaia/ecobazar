@@ -1,6 +1,5 @@
 <script setup>
-import { footerLinks, payIcons } from '~/models/menu.js';
-import AppLink from '@/components/UI/AppLink/AppLink.vue';
+import { footerLinks, payIcons } from '@/models/menu.js';
 </script>
 
 <template>
@@ -16,24 +15,28 @@ import AppLink from '@/components/UI/AppLink/AppLink.vue';
                             src="@/assets/images/ecobazar-logo.svg"
                             alt="sultan"
                             class="footer__logo-image"
-                        >
+                        />
                     </a>
                     <p class="footer__description">
                         Morbi cursus porttitor enim lobortis molestie.
                         Duis gravida turpis dui, eget bibendum magna congue nec.
                     </p>
                     <div class="footer__contacts">
-                        <AppLink 
+                        <a 
                             href="tel:+72195550114"
-                            text="(219) 555-0114"
-                        />
+                            class="footer__link"
+                        >
+                            (219) 555-0114
+                        </a>
                         <span class="footer__contacts-separator">
                             or
                         </span>
-                        <AppLink 
+                        <a 
                             href="mailto:Proxy@gmail.com"
-                            text="Proxy@gmail.com"
-                        />
+                            class="footer__link"
+                        >
+                            Proxy@gmail.com
+                        </a>
                     </div>
                 </div>
                 <div class="footer__columns">
