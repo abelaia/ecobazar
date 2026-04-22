@@ -1,0 +1,70 @@
+@use '@/assets/styles/vars.scss' as *;
+
+.home-advantages {
+    width: 100%;
+    margin-top: 30px;
+    background-color: $color-gray-40;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1320px;
+        margin: 0 auto;
+        gap: 24px;
+    }
+
+    &__item {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding-bottom: 30px;
+        border-bottom: 3px solid transparent;
+        cursor: pointer;
+        transition: border-color 0.3s ease;
+
+        &--active {
+            border-bottom-color: $color-green-500;
+
+            .home-advantages__icon-wrapper {
+                background-color: $color-green-500;
+            }
+        }
+    }
+
+    &__icon-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 18px 18px;
+        border-radius: 50%;
+        background-color: $color-green-50;
+        transition: background-color 0.3s ease;
+    }
+
+    &__icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__title {
+        font-family: $font-primary;
+        font-size: $font-size-m;
+        font-weight: $font-weight-semibold;
+        color: $color-gray-900;
+    }
+
+    &__description {
+        font-family: $font-primary;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-regular;
+        color: $color-gray-400;
+    }
+}
