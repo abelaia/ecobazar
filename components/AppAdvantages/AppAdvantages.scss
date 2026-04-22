@@ -26,6 +26,10 @@
 
         &--active {
             border-bottom-color: $color-green-500;
+
+            .home-advantages__icon-wrapper {
+                background-color: $color-green-500;
+            }
         }
     }
 
@@ -37,10 +41,6 @@
         border-radius: 50%;
         background-color: $color-green-50;
         transition: background-color 0.3s ease;
-
-        &--active {
-            background-color: $color-green-500;
-        }
     }
 
     &__icon {

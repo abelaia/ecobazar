@@ -17,12 +17,7 @@ const activeAdvantage = ref(1);
                 ]"
                 @click="activeAdvantage = advantage.id"
             >
-                <div 
-                    :class="[
-                        'home-advantages__icon-wrapper',
-                        { 'home-advantages__icon-wrapper--active': activeAdvantage === advantage.id },
-                    ]"
-                >
+                <div class="home-advantages__icon-wrapper">
                     <img
                         :src="`/images/${activeAdvantage === advantage.id ? advantage.iconActive : advantage.icon}.svg`"
                         :alt="advantage.title"
