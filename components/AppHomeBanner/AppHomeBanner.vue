@@ -8,12 +8,12 @@ import AppButton from '../UI/AppButton.vue';
             <div class="home-banner__card">
                 <img 
                     src="@/assets/images/banner-big.jpg" 
-                    alt="Big banner" 
+                    alt="Home banner" 
                     class="home-banner__image"
                 >
                 <div class="home-banner__content home-banner__content-organic">
                     <h2 class="home-banner__title-organic">
-                        Fresh & Healthy Organic Food
+                        Fresh &amp;&nbsp;Healthy Organic Food
                     </h2>
                     <div class="home-banner__offer-wrapper">
                         <div class="home-banner__offer">
@@ -31,7 +31,7 @@ import AppButton from '../UI/AppButton.vue';
                     <AppButton 
                         class="home-banner__button-organic"
                         text="Shop now"
-                        :has-wrapper="true"
+                        has-wrapper
                     />
                 </div>
             </div>
@@ -55,7 +55,6 @@ import AppButton from '../UI/AppButton.vue';
                         <AppButton 
                             class="home-banner__button-summer"
                             text="Shop Now"
-                            :has-wrapper="false"
                         />
                     </div>
                 </div>
@@ -75,7 +74,6 @@ import AppButton from '../UI/AppButton.vue';
                         <AppButton 
                             class="home-banner__button-deal"
                             text="Shop Now"
-                            :has-wrapper="false"
                         />
                     </div>
                 </div>

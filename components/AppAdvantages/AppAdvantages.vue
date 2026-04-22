@@ -11,13 +11,17 @@ const activeAdvantage = ref(1);
             <div
                 v-for="advantage in advantages"
                 :key="advantage.id"
-                class="home-advantages__item"
-                :class="{ 'home-advantages__item--active': activeAdvantage === advantage.id }"
+                :class="[
+                    'home-advantages__item',
+                    { 'home-advantages__item--active': activeAdvantage === advantage.id },
+                ]"
                 @click="activeAdvantage = advantage.id"
             >
                 <div 
-                    class="home-advantages__icon-wrapper"
-                    :class="{ 'home-advantages__icon-wrapper--active': activeAdvantage === advantage.id }"
+                    :class="[
+                        'home-advantages__icon-wrapper',
+                        { 'home-advantages__icon-wrapper--active': activeAdvantage === advantage.id },
+                    ]"
                 >
                     <img
                         :src="`/images/${activeAdvantage === advantage.id ? advantage.iconActive : advantage.icon}.svg`"

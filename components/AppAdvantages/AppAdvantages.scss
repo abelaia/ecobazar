@@ -3,7 +3,7 @@
 .home-advantages {
     width: 100%;
     margin-top: 30px;
-    background-color: $color-white;
+    background-color: $color-gray-40;
 
     &__container {
         display: flex;
@@ -25,7 +25,7 @@
         transition: border-color 0.3s ease;
 
         &--active {
-            border-bottom-color: $color-green-sucsess;
+            border-bottom-color: $color-green-500;
         }
     }
 
@@ -35,11 +35,11 @@
         justify-content: center;
         padding: 18px 18px;
         border-radius: 50%;
-        background-color: $color-green-gray-50;
+        background-color: $color-green-50;
         transition: background-color 0.3s ease;
 
         &--active {
-            background-color: $color-green-sucsess;
+            background-color: $color-green-500;
         }
     }
 

@@ -4,7 +4,7 @@ defineProps({
         type: String,
         required: true,
     },
-    hasWrapper: {
+    filled: {
         type: Boolean,
         default: false,
     },
@@ -15,8 +15,10 @@ const emit = defineEmits(['click']);
 
 <template>
     <button 
-        class="app-button"
-        :class="{ 'app-button--wrapper': hasWrapper }"
+        :class="[
+            'app-button',
+            { 'app-button--filled': filled },
+        ]"
     >
         <span>
             {{ text }}
@@ -40,17 +42,17 @@ const emit = defineEmits(['click']);
     font-family: $font-primary;
     font-size: $font-size-m;
     font-weight: $font-weight-semibold;
-    color: $color-green-sucsess;
+    color: $color-green-500;
     background-color: transparent;
     border: 0;
-    border-radius: 53px;
+    border-radius: 52px;
     cursor: pointer;
     transition: color 0.3s ease;
 
-    &--wrapper {
+    &--filled {
         padding: 16px 40px;
-        color: $color-green-sucsess;
-        background-color: $color-white;
+        color: $color-green-500;
+        background-color: $color-gray-40;
         transition: all 0.3s ease;
     }
 

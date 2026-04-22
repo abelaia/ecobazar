@@ -50,13 +50,13 @@
         font-family: $font-primary;
         font-size: $font-size-heading-big;
         font-weight: $font-weight-semibold;
-        color: $color-white;
+        color: $color-gray-40;
     }
 
     &__offer-wrapper {
         margin-top: 28px;
         padding-left: 12px;
-        border-left: 2px solid $color-green-bright;
+        border-left: 2px solid $color-green-400;
     }
 
     &__offer {
@@ -69,7 +69,7 @@
         font-family: $font-primary;
         font-size: $font-size-xl;
         font-weight: $font-weight-medium;
-        color: $color-white;
+        color: $color-gray-40;
     }
 
     &__offer-value {
@@ -77,8 +77,8 @@
         font-family: $font-primary;
         font-size: $font-size-xl;
         font-weight: $font-weight-semibold;
-        color: $color-white;
-        background-color: $color-orange;
+        color: $color-gray-40;
+        background-color: $color-orange-500;
         border-radius: 5px;
     }
 
@@ -87,7 +87,7 @@
         font-family: $font-primary;
         font-size: $font-size-sm;
         font-weight: $font-weight-regular;
-        color: $color-white;
+        color: $color-gray-40;
     }
 
     &__button-organic {
@@ -95,8 +95,8 @@
         align-self: flex-start;
 
         &:hover {
-            color: $color-white;
-            background-color: $color-green-sucsess;
+            color: $color-gray-40;
+            background-color: $color-green-500;
         }
     }
 
@@ -134,7 +134,7 @@
         margin-top: 24px;
         
         &:hover {
-            color: $color-green-dark;
+            color: $color-green-600;
             background-color: transparent;
         }
     }
@@ -149,7 +149,7 @@
         font-family: $font-primary;
         font-size: $font-size-sm;
         font-weight: $font-weight-medium;
-        color: $color-white;
+        color: $color-gray-40;
         letter-spacing: 2px;
     }
 
@@ -159,14 +159,14 @@
         font-family: $font-primary;
         font-size: $font-size-heading;
         font-weight: $font-weight-semibold;
-        color: $color-white;
+        color: $color-gray-40;
     }
 
     &__button-deal {
         margin-top: 24px;
         
         &:hover {
-            color: $color-white;
+            color: $color-gray-40;
             background-color: transparent;
         }
     }

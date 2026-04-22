@@ -3,7 +3,10 @@
 
 <template>
     <div>
+        <AppHeader />
+        <AppNavigation />
         <AppHomeBanner />
         <AppAdvantages />
+        <AppFooter />
     </div>
 </template>
