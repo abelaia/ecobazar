@@ -31,7 +31,7 @@ defineProps({
     <div class="product-card">
         <div class="product-card__image-wrapper">
             <img 
-                :src="`/popularProducts/${image}.png`" 
+                :src="`/popularProducts/${image}.jpg`" 
                 :alt="title"
                 class="product-card__image"
             >

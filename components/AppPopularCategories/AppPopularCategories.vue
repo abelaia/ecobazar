@@ -7,9 +7,7 @@ import { categories } from '~/constants/popularCategories.js';
 <template>
     <div class="home-categories">
         <div class="home-categories__container">
-            <AppSectionHeader 
-                title="Popular Categories"
-            />
+            <AppSectionHeader title="Popular Categories" />
             <div class="home-categories__grid">
                 <AppCategoryCard
                     v-for="category in categories"

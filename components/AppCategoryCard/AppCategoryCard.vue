@@ -14,7 +14,7 @@ defineProps({
 <template>
     <div class="category-card">
         <img
-            :src="`/popularCategories/${icon}.png`" 
+            :src="`/popularCategories/${icon}.jpg`" 
             :alt="title"
             class="category-card__image"
         >
@@ -40,7 +40,7 @@ defineProps({
     transition: all 0.3s ease;
 
     &:hover {
-        border-color: $color-green-success;
+        border-color: $color-green-500;
         box-shadow: $shadow-card;
     }
 
@@ -62,7 +62,7 @@ defineProps({
     }
     
     &:hover &__title {
-        color: $color-green-dark;
+        color: $color-green-600;
     }
 }
 </style>

@@ -1,5 +1,5 @@
 <script setup>
-import AppButton from '../AppButton.vue';
+import AppButton from '../AppButton/AppButton.vue';
 
 defineProps({
     title: {
@@ -41,12 +41,12 @@ defineProps({
         font-family: $font-primary;
         font-size: $font-size-m;
         font-weight: $font-weight-medium;
-        color: $color-green-success;
+        color: $color-green-500;
         cursor: pointer;
         transition: color 0.3s ease;
 
         &:hover {
-            color: $color-green-dark;
+            color: $color-green-600;
         }
     }
 }

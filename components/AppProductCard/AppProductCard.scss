@@ -9,7 +9,7 @@
     transition: all 0.3s ease;
 
     &:hover {
-        border-color: $color-green-success;
+        border-color: $color-green-500;
         box-shadow: $shadow-card;
     }
 
@@ -26,14 +26,14 @@
 
     &__discount {
         position: absolute;
-        top: 19px;
+        top: 20px;
         left: 24px;
         padding: 4px 8px;
         font-family: $font-primary;
         font-size: $font-size-sm;
         font-weight: $font-weight-medium;
-        color: $color-white;
-        background-color: $color-red-error;
+        color: $color-gray-40;
+        background-color: $color-orange-900;
         border-radius: 4px;
     }
 

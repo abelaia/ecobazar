@@ -7,9 +7,7 @@ import { popularProducts } from '@/constants/popularProducts.js';
 <template>
     <div class="popular-products">
         <div class="popular-products__container">
-            <AppSectionHeader 
-                title="Popular Products"
-            />
+            <AppSectionHeader title="Popular Products" />
             <div class="popular-products__grid">
                 <AppProductCard
                     v-for="product in popularProducts"
