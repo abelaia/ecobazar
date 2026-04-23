@@ -7,6 +7,8 @@
         <AppNavigation />
         <AppHomeBanner />
         <AppAdvantages />
+        <AppPopularCategories />
+        <AppPopularProducts />
         <AppFooter />
     </div>
 </template>

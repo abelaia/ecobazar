@@ -1,0 +1,84 @@
+@use '@/assets/styles/vars.scss' as *;
+
+.product-card {
+    width: 256px;
+    cursor: pointer;
+    border: 1px solid $color-gray-100;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        border-color: $color-green-500;
+        box-shadow: $shadow-card;
+    }
+
+    &__image-wrapper {
+        position: relative;
+        padding: 5px;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    &__discount {
+        position: absolute;
+        top: 20px;
+        left: 24px;
+        padding: 4px 8px;
+        font-family: $font-primary;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-medium;
+        color: $color-gray-40;
+        background-color: $color-orange-900;
+        border-radius: 4px;
+    }
+
+    &__info {
+        padding: 12px 12px;
+    }
+
+    &__title {
+        font-family: $font-primary;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-regular;
+        color: $color-gray-700;
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        margin-top: 8px;
+    }
+
+    &__price-current {
+        font-family: $font-primary;
+        font-size: $font-size-m;
+        font-weight: $font-weight-medium;
+        color: $color-gray-900;
+    }
+
+    &__price-old {
+        font-family: $font-primary;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-regular;
+        color: $color-gray-400;
+        text-decoration: line-through;
+    }
+
+    &__rating {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+    }
+
+    &__star {
+        width: 10px;
+        height: 10px;
+        margin-top: 8px;
+    }
+}

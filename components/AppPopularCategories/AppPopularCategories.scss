@@ -1,0 +1,20 @@
+@use '@/assets/styles/vars.scss' as *;
+
+.home-categories {
+    width: 100%;
+    padding: 60px 0px;
+    background-color: $color-gray-40;
+
+    &__container {
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(6, 200px);
+        gap: 24px;
+        justify-content: space-between;
+        margin-top: 32px;
+    }
+}
