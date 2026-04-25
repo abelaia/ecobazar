@@ -9,6 +9,7 @@
         <AppAdvantages />
         <AppPopularCategories />
         <AppPopularProducts />
+        <AppReviews />
         <AppFooter />
     </div>
 </template>

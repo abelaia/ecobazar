@@ -1,4 +1,6 @@
 <script setup>
+import AppStarRating from '@/components/UI/AppStarRating/AppStarRating.vue';
+
 defineProps({
     image: {
         type: String,
@@ -31,7 +33,7 @@ defineProps({
     <div class="product-card">
         <div class="product-card__image-wrapper">
             <img 
-                :src="`/popularProducts/${image}.jpg`" 
+                :src="`/images/popularProducts/${image}.jpg`" 
                 :alt="title"
                 class="product-card__image"
             >
@@ -57,18 +59,11 @@ defineProps({
                     ${{ oldPrice.toFixed(2) }}
                 </span>
             </div>
-            <div 
-                v-if="rating" 
-                class="product-card__rating"
-            >
-                <img 
-                    v-for="star in 5" 
-                    :key="star"
-                    :src="`/stars/${star <= rating ? 'star-filled' : 'star-empty'}.svg`"
-                    :alt="star <= rating ? 'filled star' : 'empty star'"
-                    class="product-card__star"
-                >
-            </div>
+            <AppStarRating 
+                :rating="rating"
+                :size="10"
+                class="product-card__star"
+            />
         </div>
     </div>
 </template>

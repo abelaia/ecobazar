@@ -14,7 +14,7 @@ defineProps({
 <template>
     <div class="category-card">
         <img
-            :src="`/popularCategories/${icon}.jpg`" 
+            :src="`/images/popularCategories/${icon}.jpg`" 
             :alt="title"
             class="category-card__image"
         >
