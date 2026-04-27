@@ -1,8 +1,8 @@
 <script setup>
 import { languages } from '@/constants/languages.js';
 import { currencies } from '@/constants/currencies.js';
-import AppSearch from '@/components/AppSearch/AppSearch.vue';
-import AppBasket from '@/components/AppBasket/AppBasket.vue';
+import Search from '@/components/Search/Search.vue';
+import Basket from '@/components/Basket/Basket.vue';
 
 const selectedLanguage = ref('ENG');
 const selectedCurrency = ref('USD');
@@ -82,7 +82,7 @@ const selectedCurrency = ref('USD');
                         class="header__logo-image"
                     />
                 </a>
-                <AppSearch class="header__search" />
+                <Search class="header__search" />
                 <div class="header__actions">
                     <a href="/favourites" class="header__actions-favourites">
                         <img
@@ -91,7 +91,7 @@ const selectedCurrency = ref('USD');
                             class="header__actions-favourites-icon"
                         />
                     </a>
-                    <AppBasket 
+                    <Basket 
                         class="header__actions-basket"
                         :count="3"
                         :total="57.00"
@@ -104,5 +104,5 @@ const selectedCurrency = ref('USD');
 
 <style lang="scss">
 @use '@/assets/styles/vars.scss' as *;
-@use './AppHeader.scss';
+@use './Header.scss';
 </style>

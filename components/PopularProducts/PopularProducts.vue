@@ -1,15 +1,14 @@
 <script setup>
-import AppSectionHeader from '@/components/UI/AppSectionHeader/AppSectionHeader.vue';
-import AppProductCard from '@/components/AppProductCard/AppProductCard.vue';
+import ProductCard from '@/components/ProductCard/ProductCard.vue';
 import { popularProducts } from '@/constants/popularProducts.js';
 </script>
 
 <template>
     <div class="popular-products">
         <div class="popular-products__container">
-            <AppSectionHeader title="Popular Products" />
+            <UiSectionHeader title="Popular Products" />
             <div class="popular-products__grid">
-                <AppProductCard
+                <ProductCard
                     v-for="product in popularProducts"
                     :key="product.id"
                     v-bind="product"
@@ -20,5 +19,5 @@ import { popularProducts } from '@/constants/popularProducts.js';
 </template>
 
 <style lang="scss" scoped>
-@use './AppPopularProducts.scss' as *;
+@use './PopularProducts.scss' as *;
 </style>

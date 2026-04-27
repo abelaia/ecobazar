@@ -29,6 +29,5 @@ const emit = defineEmits(['search']);
 </template>
 
 <style lang="scss" scoped>
-@use '@/assets/styles/vars.scss' as *;
-@use './AppSearch.scss';
+@use './Search.scss';
 </style>

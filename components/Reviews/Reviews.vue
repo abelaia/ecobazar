@@ -1,15 +1,19 @@
 <script setup>
 import { ref, computed } from 'vue';
 import { reviews } from '@/constants/reviews.js';
-import AppReviewCard from '@/components/AppReviewCard/AppReviewCard.vue';
-import AppPagination from '@/components/UI/AppPagination/AppPagination.vue';
+import ReviewCard from '@/components/ReviewCard/ReviewCard.vue';
+import UiPagination from '@/components/UI/Pagination/UiPagination.vue';
 
-const visibleCount = 3;
+const VISIBLE_REVIEWS_COUNT = 3;
+
 const startIndex = ref(0);
-const totalSlides = reviews.length - visibleCount + 1;
+
+const totalSlides = computed(() => {
+    return reviews.length - VISIBLE_REVIEWS_COUNT + 1;
+});
 
 const visibleReviews = computed(() => {
-    return reviews.slice(startIndex.value, startIndex.value + visibleCount);
+    return reviews.slice(startIndex.value, startIndex.value + VISIBLE_REVIEWS_COUNT);
 });
 </script>
 
@@ -20,14 +24,14 @@ const visibleReviews = computed(() => {
                 <h2 class="reviews__title">
                     Client Testimonials
                 </h2>
-                <AppPagination
+                <UiPagination
                     :current-page="startIndex + 1"
                     :total="totalSlides"
                     @change="startIndex = $event - 1"
                 />
             </div>
             <div class="reviews__grid">
-                <AppReviewCard
+                <ReviewCard
                     v-for="review in visibleReviews"
                     :key="review.id"
                     v-bind="review"

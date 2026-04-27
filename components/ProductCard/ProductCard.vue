@@ -1,6 +1,4 @@
 <script setup>
-import AppStarRating from '@/components/UI/AppStarRating/AppStarRating.vue';
-
 defineProps({
     image: {
         type: String,
@@ -59,7 +57,7 @@ defineProps({
                     ${{ oldPrice.toFixed(2) }}
                 </span>
             </div>
-            <AppStarRating 
+            <UiStarRating 
                 :rating="rating"
                 :size="10"
                 class="product-card__star"
@@ -69,5 +67,5 @@ defineProps({
 </template>
 
 <style lang="scss" scoped>
-@use './AppProductCard.scss' as *;
+@use './ProductCard.scss' as *;
 </style>

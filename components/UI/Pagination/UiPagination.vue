@@ -1,5 +1,5 @@
 <script setup>
-defineProps({
+const props = defineProps({
     total: {
         type: Number,
         required: true,
@@ -11,13 +11,25 @@ defineProps({
 });
 
 const emit = defineEmits(['change']);
+
+const prev = () => {
+    if (props.currentPage > 1) {
+        emit('change', props.currentPage - 1);
+    }
+};
+
+const next = () => {
+    if (props.currentPage < props.total) {
+        emit('change', props.currentPage + 1);
+    }
+};
 </script>
 
 <template>
     <div class="pagination">
         <button
             class="pagination__arrow"
-            @click="currentPage > 1 && emit('change', currentPage - 1)"
+            @click="prev"
         >
             <img 
                 src="/images/pagination/arrow-left-black.svg"
@@ -27,7 +39,7 @@ const emit = defineEmits(['change']);
         </button>
         <button
             class="pagination__arrow"
-            @click="currentPage < total && emit('change', currentPage + 1)"
+            @click="next"
         >
             <img 
                 src="/images/pagination/arrow-right-black.svg"
@@ -47,6 +59,7 @@ const emit = defineEmits(['change']);
     gap: 12px;
 
     &__arrow {
+        $self: &;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -61,7 +74,7 @@ const emit = defineEmits(['change']);
         &:hover {
             background-color: $color-green-500;
 
-            .pagination__arrow-icon {
+            #{$self}-icon {
                 filter: invert(1);
             }
         }

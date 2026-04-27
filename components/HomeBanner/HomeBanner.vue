@@ -1,5 +1,5 @@
 <script setup>
-import AppButton from '../UI/AppButton/AppButton.vue';
+import Button from '../UI/Button/UiButton.vue';
 </script>
 
 <template>
@@ -28,7 +28,7 @@ import AppButton from '../UI/AppButton/AppButton.vue';
                             Free shipping on all your order.
                         </p>
                     </div>
-                    <AppButton 
+                    <Button 
                         class="home-banner__button-organic"
                         text="Shop now"
                         has-wrapper
@@ -52,7 +52,7 @@ import AppButton from '../UI/AppButton/AppButton.vue';
                         <p class="home-banner__text-summer">
                             Only Fruit & Vegetable
                         </p>
-                        <AppButton 
+                        <Button 
                             class="home-banner__button-summer"
                             text="Shop Now"
                         />
@@ -71,7 +71,7 @@ import AppButton from '../UI/AppButton/AppButton.vue';
                         <h2 class="home-banner__text-deal">
                             Special Products Deal of the Month
                         </h2>
-                        <AppButton 
+                        <Button 
                             class="home-banner__button-deal"
                             text="Shop Now"
                         />
@@ -83,5 +83,5 @@ import AppButton from '../UI/AppButton/AppButton.vue';
 </template>
 
 <style lang="scss">
-@use './AppHomeBanner.scss';
+@use './HomeBanner.scss';
 </style>
