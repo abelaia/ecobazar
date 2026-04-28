@@ -1,4 +1,5 @@
 <script setup>
+import UiSectionHeader from '../UI/SectionHeader/UiSectionHeader.vue';
 import CategoryCard from '@/components/CategoryCard/CategoryCard.vue';
 import { categories } from '~/constants/popularCategories.js';
 </script>

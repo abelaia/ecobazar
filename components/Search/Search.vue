@@ -7,7 +7,7 @@ const emit = defineEmits(['search']);
 <template>
     <div class="app-search">
         <img
-            src="@/assets/images/search.svg"
+            src="/images/search/search.svg"
             alt="search"
             class="app-search__icon"
         />

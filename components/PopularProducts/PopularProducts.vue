@@ -1,4 +1,5 @@
 <script setup>
+import UiSectionHeader from '@/components/UI/SectionHeader/UiSectionHeader.vue';
 import ProductCard from '@/components/ProductCard/ProductCard.vue';
 import { popularProducts } from '@/constants/popularProducts.js';
 </script>

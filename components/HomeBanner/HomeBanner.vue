@@ -1,5 +1,4 @@
 <script setup>
-import Button from '../UI/Button/UiButton.vue';
 </script>
 
 <template>
@@ -7,7 +6,7 @@ import Button from '../UI/Button/UiButton.vue';
         <div class="home-banner__container">
             <div class="home-banner__card">
                 <img 
-                    src="@/assets/images/banner-big.jpg" 
+                    src="/images/homeBanner/banner-big.jpg" 
                     alt="Home banner" 
                     class="home-banner__image"
                 >
@@ -28,7 +27,7 @@ import Button from '../UI/Button/UiButton.vue';
                             Free shipping on all your order.
                         </p>
                     </div>
-                    <Button 
+                    <UiButton
                         class="home-banner__button-organic"
                         text="Shop now"
                         has-wrapper
@@ -38,7 +37,7 @@ import Button from '../UI/Button/UiButton.vue';
             <div class="home-banner__right">
                 <div class="home-banner__card">
                     <img 
-                        src="@/assets/images/banner-products.jpg" 
+                        src="/images/homeBanner/banner-products.jpg" 
                         alt="Products" 
                         class="home-banner__image"
                     >
@@ -52,7 +51,7 @@ import Button from '../UI/Button/UiButton.vue';
                         <p class="home-banner__text-summer">
                             Only Fruit & Vegetable
                         </p>
-                        <Button 
+                        <UiButton
                             class="home-banner__button-summer"
                             text="Shop Now"
                         />
@@ -60,7 +59,7 @@ import Button from '../UI/Button/UiButton.vue';
                 </div>
                 <div class="home-banner__card">
                     <img 
-                        src="@/assets/images/banner-pattern.jpg" 
+                        src="/images/homeBanner/banner-pattern.jpg" 
                         alt="Pattern" 
                         class="home-banner__image"
                     >
@@ -71,7 +70,7 @@ import Button from '../UI/Button/UiButton.vue';
                         <h2 class="home-banner__text-deal">
                             Special Products Deal of the Month
                         </h2>
-                        <Button 
+                        <UiButton
                             class="home-banner__button-deal"
                             text="Shop Now"
                         />

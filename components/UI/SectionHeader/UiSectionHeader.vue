@@ -1,4 +1,6 @@
 <script setup>
+import UiButton from '../Button/UiButton.vue';
+
 defineProps({
     title: {
         type: String,
