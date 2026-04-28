@@ -38,5 +38,5 @@ const activeAdvantage = ref(1);
 </template>
 
 <style lang="scss" scoped>
-@use './AppAdvantages.scss' as *;
+@use './Advantages.scss' as *;
 </style>

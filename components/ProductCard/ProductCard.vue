@@ -74,5 +74,5 @@ defineProps({
 </template>
 
 <style lang="scss" scoped>
-@use './AppProductCard.scss' as *;
+@use './ProductCard.scss' as *;
 </style>

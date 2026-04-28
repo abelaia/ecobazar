@@ -41,6 +41,5 @@ defineProps({
 </template>
 
 <style lang="scss">
-@use '@/assets/styles/vars.scss' as *;
-@use './AppBasket.scss';
+@use './Basket.scss';
 </style>

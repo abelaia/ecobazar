@@ -80,5 +80,5 @@ import { footerLinks, payIcons } from '@/models/menu.js';
 </template>
 
 <style lang="scss" scoped>
-@use './AppFooter.scss' as *;
+@use './Footer.scss' as *;
 </style>

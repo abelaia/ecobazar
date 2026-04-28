@@ -1,5 +1,5 @@
 <script setup>
-import AppButton from '../AppButton/AppButton.vue';
+import UiButton from '../Button/UiButton.vue';
 
 defineProps({
     title: {
@@ -14,7 +14,7 @@ defineProps({
         <h2 class="section-header__title">
             {{ title }}
         </h2>
-        <AppButton 
+        <UiButton 
             class="section-header__button"
             text="View All"
             :has-wrapper="false"

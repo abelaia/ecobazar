@@ -1,5 +1,4 @@
 <script setup>
-import AppButton from '../UI/AppButton.vue';
 </script>
 
 <template>
@@ -28,7 +27,7 @@ import AppButton from '../UI/AppButton.vue';
                             Free shipping on all your order.
                         </p>
                     </div>
-                    <AppButton 
+                    <UiButton 
                         class="home-banner__button-organic"
                         text="Shop now"
                         has-wrapper
@@ -83,5 +82,5 @@ import AppButton from '../UI/AppButton.vue';
 </template>
 
 <style lang="scss">
-@use './AppHomeBanner.scss';
+@use './HomeBanner.scss';
 </style>

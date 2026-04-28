@@ -3,12 +3,12 @@
 
 <template>
     <div>
-        <AppHeader />
-        <AppNavigation />
-        <AppHomeBanner />
-        <AppAdvantages />
-        <AppPopularCategories />
-        <AppPopularProducts />
-        <AppFooter />
+        <Header />
+        <Navigation />
+        <HomeBanner />
+        <Advantages />
+        <PopularCategories />
+        <PopularProducts />
+        <Footer />
     </div>
 </template>

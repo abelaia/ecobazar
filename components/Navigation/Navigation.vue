@@ -51,5 +51,5 @@ import { menuItems } from '@/constants/navigation.js';
 </template>
 
 <style lang="scss" scoped>
-@use './AppNavigation.scss' as *;
+@use './Navigation.scss' as *;
 </style>
