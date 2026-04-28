@@ -35,7 +35,7 @@ import { menuItems } from '@/constants/navigation.js';
             </nav>
             <div class="navigation__phone">
                 <img 
-                    src="@/assets/images/phone.svg"
+                    src="/images/navigation/phone.svg"
                     alt="phone"
                     class="navigation__phone-icon"
                 >

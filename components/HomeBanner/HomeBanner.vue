@@ -6,7 +6,7 @@
         <div class="home-banner__container">
             <div class="home-banner__card">
                 <img 
-                    src="@/assets/images/banner-big.jpg" 
+                    src="/images/homeBanner/banner-big.jpg" 
                     alt="Home banner" 
                     class="home-banner__image"
                 >
@@ -37,7 +37,7 @@
             <div class="home-banner__right">
                 <div class="home-banner__card">
                     <img 
-                        src="@/assets/images/banner-products.jpg" 
+                        src="/images/homeBanner/banner-products.jpg" 
                         alt="Products" 
                         class="home-banner__image"
                     >
@@ -51,7 +51,7 @@
                         <p class="home-banner__text-summer">
                             Only Fruit & Vegetable
                         </p>
-                        <AppButton 
+                        <UiButton 
                             class="home-banner__button-summer"
                             text="Shop Now"
                         />
@@ -59,7 +59,7 @@
                 </div>
                 <div class="home-banner__card">
                     <img 
-                        src="@/assets/images/banner-pattern.jpg" 
+                        src="/images/homeBanner/banner-pattern.jpg" 
                         alt="Pattern" 
                         class="home-banner__image"
                     >
@@ -70,7 +70,7 @@
                         <h2 class="home-banner__text-deal">
                             Special Products Deal of the Month
                         </h2>
-                        <AppButton 
+                        <UiButton 
                             class="home-banner__button-deal"
                             text="Shop Now"
                         />

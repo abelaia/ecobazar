@@ -31,7 +31,7 @@ defineProps({
     <div class="product-card">
         <div class="product-card__image-wrapper">
             <img 
-                :src="`/popularProducts/${image}.jpg`" 
+                :src="`images/popularProducts/${image}.jpg`" 
                 :alt="title"
                 class="product-card__image"
             >
@@ -64,7 +64,7 @@ defineProps({
                 <img 
                     v-for="star in 5" 
                     :key="star"
-                    :src="`/stars/${star <= rating ? 'star-filled' : 'star-empty'}.svg`"
+                    :src="`images/stars/${star <= rating ? 'star-filled' : 'star-empty'}.svg`"
                     :alt="star <= rating ? 'filled star' : 'empty star'"
                     class="product-card__star"
                 >

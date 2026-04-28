@@ -24,7 +24,7 @@ const emit = defineEmits(['click']);
             {{ text }}
         </span>
         <img 
-            src="@/assets/images/arrow-right.svg" 
+            src="/images/ui/button/arrow-right.svg" 
             alt="arrow" 
             class="app-button__arrow"
         >

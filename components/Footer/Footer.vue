@@ -12,7 +12,7 @@ import { footerLinks, payIcons } from '@/models/menu.js';
                         class="footer__logo"
                     >
                         <img 
-                            src="@/assets/images/ecobazar-logo-white.svg"
+                            src="/images/footer/ecobazar-logo-white.svg"
                             alt="sultan"
                             class="footer__logo-image"
                         />

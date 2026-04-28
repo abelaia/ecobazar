@@ -15,7 +15,7 @@ const selectedCurrency = ref('USD');
                 <div class="header__top-bar-left">
                     <a class="header__location">
                         <img 
-                            src="@/assets/images/location.svg"
+                            src="/images/header/location.svg"
                             alt="location"
                             class="header__location-icon"
                         >
@@ -77,7 +77,7 @@ const selectedCurrency = ref('USD');
             <div class="header__middle-bar">
                 <a href="/" class="header__logo">
                     <img
-                        src="@/assets/images/ecobazar-logo-black.svg"
+                        src="/images/header/ecobazar-logo-black.svg"
                         alt="EcoBazar"
                         class="header__logo-image"
                     />
@@ -86,7 +86,7 @@ const selectedCurrency = ref('USD');
                 <div class="header__actions">
                     <a href="/favourites" class="header__actions-favourites">
                         <img
-                            src="@/assets/images/favourites.svg"
+                            src="/images/header/favourites.svg"
                             alt="favourites"
                             class="header__actions-favourites-icon"
                         />

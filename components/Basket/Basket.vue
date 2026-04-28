@@ -18,7 +18,7 @@ defineProps({
     >
         <div class="basket__icon-wrapper">
             <img
-                src="@/assets/images/basket.svg"
+                src="/images/basket/basket.svg"
                 alt="basket"
                 class="basket__icon"
             >
