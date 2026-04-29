@@ -69,7 +69,7 @@ import { footerLinks, payIcons } from '@/models/menu.js';
                     <img
                         v-for="icon in payIcons"
                         :key="icon.id"
-                        :src="`/images/pay/${icon.src}`"
+                        :src="`images/pay/${icon.src}`"
                         :alt="icon.alt"
                         class="footer__pay-icon"
                     />
