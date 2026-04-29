@@ -30,7 +30,6 @@
                     <UiButton 
                         class="home-banner__button-organic"
                         text="Shop now"
-                        has-wrapper
                     />
                 </div>
             </div>
