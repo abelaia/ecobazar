@@ -19,7 +19,7 @@ const activeAdvantage = ref(1);
             >
                 <div class="home-advantages__icon-wrapper">
                     <img
-                        :src="`/images/advantages${activeAdvantage === advantage.id ? advantage.iconActive : advantage.icon}.svg`"
+                        :src="`/ecobazar/images/advantages/${modelValue === advantage.id ? advantage.iconActive : advantage.icon}.svg`"
                         :alt="advantage.title"
                         class="home-advantages__icon"
                     >
