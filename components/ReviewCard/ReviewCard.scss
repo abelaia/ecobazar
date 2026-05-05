@@ -1,0 +1,59 @@
+@use '@/assets/styles/vars.scss' as *;
+
+.review-card {
+    max-width: 424px;
+    padding: 24px;
+    background-color: $color-gray-40;
+    border-radius: 8px;
+    box-shadow: $shadow-review;
+
+    &__quotation {
+        display: block;
+        width: 32px;
+        height: 26px;
+    }
+
+    &__text {
+        margin-top: 16px;
+        font-family: $font-primary;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-regular;
+        line-height: 1.6;
+        color: $color-gray-700;
+    }
+
+    &__wrapper {
+        margin-top: 16px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &__photo {
+        width: 44px;
+        height: 44px;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+
+    &__author {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        flex: 1;
+    }
+
+    &__name {
+        font-family: $font-primary;
+        font-size: $font-size-m;
+        font-weight: $font-weight-medium;
+        color: $color-gray-900;
+    }
+
+    &__job {
+        font-family: $font-primary;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-regular;
+        color: $color-gray-400;
+    }
+}

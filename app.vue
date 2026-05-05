@@ -9,6 +9,7 @@
         <Advantages />
         <PopularCategories />
         <PopularProducts />
+        <Reviews />
         <Footer />
     </div>
 </template>

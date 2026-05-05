@@ -27,7 +27,7 @@
                             Free shipping on all your order.
                         </p>
                     </div>
-                    <UiButton 
+                    <UiButton
                         class="home-banner__button-organic"
                         text="Shop now"
                     />
@@ -50,7 +50,7 @@
                         <p class="home-banner__text-summer">
                             Only Fruit & Vegetable
                         </p>
-                        <UiButton 
+                        <UiButton
                             class="home-banner__button-summer"
                             text="Shop Now"
                         />
@@ -69,7 +69,7 @@
                         <h2 class="home-banner__text-deal">
                             Special Products Deal of the Month
                         </h2>
-                        <UiButton 
+                        <UiButton
                             class="home-banner__button-deal"
                             text="Shop Now"
                         />
